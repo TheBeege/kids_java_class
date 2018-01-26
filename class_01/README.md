@@ -14,6 +14,39 @@ Now we need to download Java.
 #### Windows Setup
 If you're on a Mac, you can ignore this. On Windows, we need to do some extra setup.
 
+1. Open up editing system properties
+  1. Hit the Windows key or click the Windows icon
+  2. Type "system environment"
+  3. Click "Edit the system environment variables"
+    * ![Open "Edit system environment variables"](images/open_env_vars.png)
+  4. Click "Enivronment variables..."
+    * ![Environment variables...](images/properties_advanced_vars.png)
+2. Setup `JAVA_HOME`
+  1. Click "New..."
+    * ![New...](images/new_env_var.png)
+  2.  Get the Java Path
+    1. Open Windows Explorer
+    2. Navigate to `C:\Program Files\Java`
+    3. Open the folder that says `jdk` with the highest number
+    4. Click in the location bar and copy the text (don't close this window yet!)
+      * ![Get location text](images/copy_java_path.png)
+  3. Back in the "New..." Window you brought up in step 2.1, enter `JAVA_HOME` as the name, and the text you copied in step 2.2.4 as the value
+    * ![Set `JAVA_HOME`](images/set_java_home.png)
+  4. Click OK
+3. Setup the Java executables in `PATH`
+  1. In the bottom pane, find the `Path` variable
+  2. Click "Edit..."
+    * ![Edit Path variable](images/edit_path.png)
+  3. Back in the Windows Explorer window from step 2.2.4, open the `bin` folder and copy that location
+  4. Back in the "Edit..." window, click New
+    * ![Add Path entry](images/new_path_entry.png)
+  5. Paste the location you copied and hit "enter"
+    * ![Add Java bin](images/add_java_bin.png)
+  6. Click OK
+4. Keep clicking OK until everything is done. You can close the Windows Explorer window, too.
+
+Now, you've setup Java to use on your computer. Good job!
+
 ## Using Command Line
 Command line is another way of looking at files. Using Windows Explorer or Mac Finder are how we normally look at files on the computer. There's a window, and it has folder icons with names and other information. Many people are comfortable with this way of interacting with a computer.
 

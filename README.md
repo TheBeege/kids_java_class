@@ -1,0 +1,1 @@
+# kids_java_class

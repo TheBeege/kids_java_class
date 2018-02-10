@@ -8,9 +8,18 @@ So how does this work? In the current version of Java, there are three different
 The `while` loop is the most basic kind of loop. The concept is simple. If some condition is `True`, then repeat the loop. This makes `while` loops both powerful and flexible. Let's cover an example.
 
 ```java
-while(True) {
+while(true) {
   System.out.println("I will run forever!");
 }
 ```
 
-This is a `while` loop that will run until you terminate the program.
+This is a `while` loop that will run until you terminate the program. If you ran this program, you can stop it by pressing `control + c`. There are ways to make the while loop stop itself.
+
+```java
+int i = 0;
+while(i < 10) {
+  System.out.println(i);
+  i++;
+}
+```
+e
